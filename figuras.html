@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" media="(min-width: 1070px)" href="./css figuras/desktop.css" />
+    <link rel="stylesheet" media="(max-width: 1070px)" href="./css figuras/tablet.css" />
+    <link rel="stylesheet" media="(max-width: 700px)" href="./css figuras/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b53a3cf244.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Sansita+Swashed:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <nav class="nav-container">
+                <a href="./index.html">Home</a>
+                <a href="./figuras.html">Figuras geométricas</a>
+                <a href="./promedio.html">Calcula el promedio</a>
+                <a href="./descuentos.html">Calcula el descuento</a>
+            </nav>
+        <h1 class="title-figure">
+            Figuras Geométricas
+        </h1>
+    </header>
+    <main>
+        <section class="container-cuadrado">
+            <section class="cuadrado">
+                <h2>Calcula el área y perímetro de un cuadrado</h2>
+                <form class="form-cuadrado">
+                    <label class="label-cuadrado" for="inputCuadrado">
+                    ¿Cuánto miden los lados del cuadrado?
+                    </label>
+                    <input id="inputCuadrado" type="number"/>
+                </form>
+                <div class="button-container-cuadrado">
+                    <button class="button-perimetro-cuadrado" type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                    </button>
+                    <button class="button-area-cuadrado" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                    </button>
+                </div>
+                <div class="resultCuadrado">
+                    <p id="ResultPerimetroCuadrado">Aqui aparecera tu perímetro</p>
+                    <p id="ResultAreaCuadrado">Aqui aparecera tu área</p>
+                </div>
+            </section>
+        </section>
+        
+    <section class="container-triangulo">
+        <h2>Calcula el área y perímetro de un triángulo</h2>
+        <form class="form-triangulo">
+            <div class="label-triangulo" >
+                <label class="label-triangulo-a" for="inputTriangulo1">
+                ¿Cuánto mide el lado A del triángulo?
+            </label>
+            </div>
+            <div class="input-triangulo">
+                <input id="inputTriangulo1" type="number"/>
+            </div>
+            
+            <div class="label-triangulo">
+                <label class="label-triangulo-b" for="inputTriangulo2">
+                    ¿Cuánto mide el lado B del triángulo?
+                </label>
+            </div>
+            <div class="input-triangulo">
+                <input id="inputTriangulo2" type="number"/>
+            </div>
+           
+            <div class="label-triangulo" >
+                <label class="label-triangulo-base" for="inputBaseTriangulo">
+                ¿Cuánto mide la base del triángulo?
+            </label>
+            </div>
+            <div class="input-triangulo">
+               <input id="inputBaseTriangulo" type="number"/> 
+            </div>
+            
+        </form>
+        <div class="button-container-triangulo">
+            <button class="button-perimetro-triangulo"  type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perímetro
+            </button>
+            <button class="button-area-triangulo" type="button" onclick="calcularAreaTriangulo()">
+                Calcular el área
+            </button>
+        </div>
+        <div class="resultTriangulo">
+            <p id="ResultPerimetroTriangulo">Aqui aparecera tu perímetro</p>
+            <p id="ResultAreaTriangulo">Aqui aparecera tu área</p>
+        </div>
+    </section>
+    
+    <section class="container-circulo">
+        <h2>Calcula el área y perímetro de un círculo</h2>
+        <form class="form-circulo">
+            <label class="label-circulo" for="inputCirculo">
+                ¿Cuál es el rádio del círculo?
+            </label>
+            <input id="inputCirculo" type="number"/>
+        </form>
+        <div class="button-container-circulo">
+            <button class="button-perimetro-circulo"  type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro
+            </button>
+            <button class="button-area-circulo"  type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+        </div>
+        <div class="resultCirculo">
+            <p id="ResultPerimetroCirculo">Aqui aparecera tu perímetro</p>
+            <p id="ResultAreaCirculo">Aqui aparecera tu área</p>
+        </div>
+        
+    </section>
+    </main>
+    <footer>
+        <h3>
+            Gracias por usar mi página! Puedes seguirme en:
+        </h3>
+        <section class="a-container">
+            <a class="facebook" href="https://www.facebook.com/Malelafalce/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="instagram" href="https://www.instagram.com/malelafalce/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/malena-la-falce-52a47714a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="twitter" href="https://twitter.com/MaleLaFalce"><i class="fa-brands fa-twitter"></i></a>
+            <a class="github" href="https://github.com/malelafalce"><i class="fa-brands fa-github"></i></a>  
+        </section>
+        
+    </footer>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>

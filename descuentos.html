@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(min-width: 1070px)" href="./css descuento/desktop.css" />
+    <link rel="stylesheet" media="(max-width: 1070px)" href="./css descuento/tablet.css" />
+    <link rel="stylesheet" media="(max-width: 700px)" href="./css descuento/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b53a3cf244.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Sansita+Swashed:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Calcula el descuento</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="./index.html">Home</a>
+            <a href="./figuras.html">Figuras geométricas</a>
+            <a href="./promedio.html">Calcula el promedio</a>
+            <a href="./descuentos.html">Calcula el descuento</a>
+        </nav>
+        <h1 class="title-discount">
+            Calcula el descuento
+        </h1>
+    </header>
+    <main class="principal-container">
+            <form class="form-container">
+                <h2 class="title-container">
+                    Calcula el precio a pagar de tus productos con descuento
+                </h2>
+                <label class="label-price" for="InputPrice">Escribe el precio de tu producto</label>
+                <input class="input-price" id="InputPrice" type="number">
+                <label class="label-percent" for="InputDiscount">Escribe el porcentaje de descuento</label>
+                <input class="input-percent" id="InputDiscount" type="number">
+                <button class="button-price" type="button" onclick="onClickButtonPriceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+
+                <p class="result" id="ResultP">Aquí aparecerá tu precio con descuento</p>
+            </form>
+    </main>
+    
+    <footer>
+        <h3>
+            Gracias por usar mi página! Puedes seguirme en:
+        </h3>
+        <section class="a-container">
+            <a class="facebook" href="https://www.facebook.com/Malelafalce/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="instagram" href="https://www.instagram.com/malelafalce/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/malena-la-falce-52a47714a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="twitter" href="https://twitter.com/MaleLaFalce"><i class="fa-brands fa-twitter"></i></a>
+            <a class="github" href="https://github.com/malelafalce"><i class="fa-brands fa-github"></i></a>  
+        </section>
+        
+    </footer>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

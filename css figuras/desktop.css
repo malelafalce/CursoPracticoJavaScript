@@ -1,0 +1,600 @@
+:root{
+    --font-title:'Sansita Swashed', cursive;
+    --font-text:'Quicksand', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+header{
+    width: 100%;
+    height: 170px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+}
+.title-figure{
+    font-family: var(--font-title);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 515px;
+}
+
+
+
+
+
+
+/* NAV */
+
+
+
+
+
+.nav-container a:hover{
+    border: 3px solid lightgoldenrodyellow;
+    background-color: lightcyan;
+    box-shadow: 1px 1px 14px 5px lightgoldenrodyellow;
+}
+.nav-container a{
+    border: 3px solid lightcyan;
+    width: 236px;
+    height: 58px;
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-size: 20px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin: 0px 20px;
+    border-radius: 30px;
+    padding: 14px 0px;
+}
+.nav-container{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cuadrado */
+
+
+
+
+
+
+
+
+
+
+
+.container-cuadrado{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-self: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: lightcoral;
+    width: 350px;
+    height: 377px;
+    padding: 20px;
+    margin-left: auto;
+}
+.container-cuadrado h2{
+    font-size: 25px;
+    font-family: var(--font-title);
+    text-align: center;
+    width: 323px;
+}
+.form-cuadrado{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin-top: 32px;
+}
+.label-cuadrado{
+    font-family: var(--font-text);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+#inputCuadrado:hover{
+    border: 1px solid lightslategray;
+}
+.form-cuadrado input{
+    font-family: var(--font-text);
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    background-color: lightgoldenrodyellow;
+    outline: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    justify-self: center;
+}
+.form-cuadrado input::-webkit-inner-spin-button,
+.form-cuadrado input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-container-cuadrado{
+    justify-self: center;
+    align-self: center;
+    margin: 33px 3px;
+}
+.button-perimetro-cuadrado{
+    font-family: var(--font-text);
+    width: 157px;
+    height: 44px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+    margin-right: 12px;
+}
+.button-perimetro-cuadrado:hover{
+    background-color: lightcoral;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.button-area-cuadrado{
+    font-family: var(--font-text);
+    width: 139px;
+    height: 44px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+}
+.button-area-cuadrado:hover{
+    background-color: lightcoral;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.resultCuadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#ResultPerimetroCuadrado{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(246, 183, 183);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightcoral;
+}
+#ResultAreaCuadrado{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding-top: 4px;
+    border-radius: 10px;
+    background-color: rgb(246, 183, 183);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightcoral;
+}
+
+
+
+
+
+
+/* Triángulo */
+
+
+
+
+
+
+
+.container-triangulo{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-self: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    margin: auto;
+}
+
+.container-triangulo h2{
+    font-size: 25px;
+    font-family: var(--font-title);
+    text-align: center;
+    width: 350px;
+    margin-left: 12px;
+}
+.form-triangulo{
+    width: 380px;
+    height: 157px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.4fr 0.3fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 24px;
+    
+}
+.input-triangulo{
+    border-bottom: 2px solid lightblue;
+    justify-self: center;
+}
+#inputTriangulo1:hover, #inputTriangulo2:hover, #inputBaseTriangulo:hover{
+    border: 1px solid lightpink;
+}
+.form-triangulo input{
+    font-family: var(--font-text);
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    background-color: lightgoldenrodyellow;
+    outline: none;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    justify-self: center;
+}
+.form-triangulo input::-webkit-inner-spin-button,
+.form-triangulo input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.label-triangulo{
+    font-family: var(--font-text);
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightblue;
+}
+.button-container-triangulo{
+    justify-self: center;
+    align-self: center;
+    margin: 33px 3px;
+}
+.button-perimetro-triangulo{
+    font-family: var(--font-text);
+    width: 157px;
+    height: 44px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+    margin-right: 12px;
+}
+.button-perimetro-triangulo:hover{
+    background-color: lightgray;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.button-area-triangulo{
+    font-family: var(--font-text);
+    width: 139px;
+    height: 44px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+}
+.button-area-triangulo:hover{
+    background-color: lightgray;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.resultTriangulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#ResultPerimetroTriangulo{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(138, 165, 165);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightgray;
+
+}
+#ResultAreaTriangulo{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(138, 165, 165);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightgray;
+
+}
+
+
+
+
+
+
+/* Círculo */
+
+
+
+
+
+.container-circulo{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-self: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: lightpink;
+    width: 358px;
+    height: 377px;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.container-circulo h2{
+    font-family: var(--font-title);
+    font-size: 25px;
+    text-align: center;
+    width: 323px;
+}
+.form-circulo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin-top: 32px;
+}
+.form-circulo input:hover{
+    border: 1px solid lightcoral;
+}
+.label-circulo{
+    font-family: var(--font-text);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-circulo input{
+    font-family: var(--font-text);
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    background-color: lightgoldenrodyellow;
+    outline: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    justify-self: center;
+}
+.form-circulo input::-webkit-inner-spin-button,
+.form-circulo input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.button-container-circulo{
+    justify-self: center;
+    align-self: center;
+    margin: 33px 3px;
+}
+.button-perimetro-circulo{
+    font-family: var(--font-text);
+    width: 157px;
+    height: 44px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+    margin-right: 12px;
+}
+.button-perimetro-circulo:hover{
+    background-color: lightpink;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.button-area-circulo{
+    font-family: var(--font-text);
+    width: 139px;
+    height: 44px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+}
+.button-area-circulo:hover{
+    background-color: lightpink;
+    border: 1px solid lightgoldenrodyellow;
+    cursor: pointer;
+}
+.resultCirculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#ResultPerimetroCirculo{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(255, 221, 226);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightpink;
+
+}
+#ResultAreaCirculo{
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(255, 221, 226);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    border: 5px solid lightpink;
+
+}
+
+
+
+
+
+
+/* Footer */
+
+
+
+
+
+footer{
+    background-color: lightcyan;
+    width: 100%;
+    height: 91px;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    margin-top: 13px;
+}
+footer h3{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: var(--font-text);
+}
+.a-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+.facebook{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #1E6BE1;
+    text-align: center;
+    background-color: #1E6BE1;
+    color: white;
+    border-radius: 5px;
+}
+.facebook:hover{
+    background-color: white;
+    color: #1E6BE1;
+    border: 2px solid #1E6BE1;
+}
+.instagram{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #E11EE1;
+    text-align: center;
+    background-color: #E11EE1;
+    color: white;
+    border-radius: 5px;
+}
+.instagram:hover{
+    background-color: white;
+    color: #E11EE1;
+    border: 2px solid #E11EE1;
+}
+.linkedin{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #0358F7;
+    text-align: center;
+    background-color: #0358F7;
+    color: white;
+    border-radius: 5px;
+}
+.linkedin:hover{
+    background-color: white;
+    color: #0358F7;
+    border: 2px solid #0358F7 ;
+}
+.twitter{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #528EFF;
+    text-align: center;
+    background-color: #528EFF;
+    color: white;
+    border-radius: 5px;
+}
+.twitter:hover{
+    background-color: white;
+    color: #528EFF;
+    border: 2px solid #528EFF;
+}
+.github{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.github:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}

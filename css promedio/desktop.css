@@ -1,0 +1,338 @@
+:root{
+    --font-title:'Sansita Swashed', cursive;
+    --font-text:'Quicksand', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+header{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+}
+.title-average{
+    font-family: var(--font-title);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* NAV */
+
+
+
+
+
+.nav-container a:hover{
+    border: 3px solid lightgoldenrodyellow;
+    background-color: lightcyan;
+    box-shadow: 1px 1px 14px 5px lightgoldenrodyellow;
+}
+.nav-container a{
+    border: 3px solid lightcyan;
+    width: 236px;
+    height: 58px;
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-size: 20px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin: 0px 20px;
+    border-radius: 30px;
+    padding: 14px 0px;
+}
+.nav-container{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
+
+/* Main */
+
+
+
+
+
+
+.principal-container{
+    margin: 55px auto 150px;
+    background-color: lightblue;
+    border-radius: 50px;
+    border: 20px solid lightgoldenrodyellow;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas: "number promedio"
+                        "input  list"
+                        "button  list"
+                        "elements list";
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+/* one row*/
+
+.number-label{
+    font-family: var(--font-text);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* two row*/
+
+.number-input{
+    grid-area: input;
+    justify-self: center;
+    font-family: var(--font-text);
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    outline: none;
+}
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.number-input:hover{
+    border: 2px solid rgb(122, 197, 197);
+}
+
+/* thee row*/
+
+.buttons-container{
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.send-button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--font-text);
+    background-color: lightcyan;
+    border: 2px solid lightcyan;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+.send-button:hover{
+    background-color: lightblue;
+    border: 2px solid lightcyan;
+}
+
+
+.clean-button{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--font-text);
+    background-color: lightcyan;
+    border: 2px solid lightcyan;
+    border-radius: 20px;
+    margin-right: auto;
+}
+.clean-button:hover{
+    background-color: lightblue;
+    border: 2px solid lightcyan;
+}
+
+/* four row*/
+
+.count-list-container{
+    grid-area: elements;
+    font-family: var(--font-text);
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(114, 188, 212);
+    border-radius: 20px;
+    padding: 10px;
+    align-self: center;
+}
+
+/* five row*/
+
+.average-container{
+    grid-area: promedio;
+    font-family: var(--font-text);
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    justify-self: center;
+}
+
+/* six row*/
+
+.list-container{
+    grid-area: list;
+    font-family: var(--font-text);
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 20px;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+
+
+
+footer{
+    background-color: lightcyan;
+    width: 100%;
+    height: 91px;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    margin-top: 13px;
+}
+footer h3{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: var(--font-text);
+}
+.a-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+.facebook{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #1E6BE1;
+    text-align: center;
+    background-color: #1E6BE1;
+    color: white;
+    border-radius: 5px;
+}
+.facebook:hover{
+    background-color: white;
+    color: #1E6BE1;
+    border: 2px solid #1E6BE1;
+}
+.instagram{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #E11EE1;
+    text-align: center;
+    background-color: #E11EE1;
+    color: white;
+    border-radius: 5px;
+}
+.instagram:hover{
+    background-color: white;
+    color: #E11EE1;
+    border: 2px solid #E11EE1;
+}
+.linkedin{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #0358F7;
+    text-align: center;
+    background-color: #0358F7;
+    color: white;
+    border-radius: 5px;
+}
+.linkedin:hover{
+    background-color: white;
+    color: #0358F7;
+    border: 2px solid #0358F7 ;
+}
+.twitter{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid #528EFF;
+    text-align: center;
+    background-color: #528EFF;
+    color: white;
+    border-radius: 5px;
+}
+.twitter:hover{
+    background-color: white;
+    color: #528EFF;
+    border: 2px solid #528EFF;
+}
+.github{
+    justify-self: center;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.github:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
