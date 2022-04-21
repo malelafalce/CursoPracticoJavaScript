@@ -1,6 +1,6 @@
 # platzi-curso-practico-JavaScript
 
-...
+ https://malelafalce.github.io/CursoPracticoJavaScript/
 
 ## Taller #1: Figuras geométricas
 
